@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Рома ест</title>
+<meta name="theme-color" content="#FFF4E8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero__blob hero__blob--1"></div>
+  <div class="hero__blob hero__blob--2"></div>
+  <p class="hero__kicker">Мам, всё, что я люблю, — тут</p>
+  <h1 class="hero__title">Рома<br><span>ест</span></h1>
+  <p class="hero__sub">Не знаешь, что приготовить? Жми кнопку — я уже выбрал за тебя.</p>
+  <button class="random-btn" id="randomBtn"><span class="random-btn__dice">🎲</span> Что приготовить сегодня?</button>
+</header>
+
+<main>
+  <nav class="tabs" id="tabs"></nav>
+  <section class="grid" id="grid"></section>
+  <p class="empty" id="empty" hidden>Тут пока пусто — скоро добавлю 🙂</p>
+</main>
+
+<footer class="foot">Сделано с любовью для мамы ❤️</footer>
+
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet__backdrop" data-close></div>
+  <article class="sheet__panel" id="sheetPanel" role="dialog" aria-modal="true"></article>
+</div>
+
+<script src="recipes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
